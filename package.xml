@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<package format="3">
+
+  <name>mobi_sim</name>
+  <version>0.0.1</version>
+
+  <description>
+    Mobi mobile robot simulation for ROS 2 Jazzy and Gazebo Harmonic.
+  </description>
+
+  <maintainer email="roblab@example.com">roblab</maintainer>
+
+  <license>Apache-2.0</license>
+
+  <!-- Build system -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Robot description -->
+  <depend>xacro</depend>
+  <depend>robot_state_publisher</depend>
+
+  <!-- Gazebo Harmonic / ROS-Gazebo integration -->
+  <depend>ros_gz_sim</depend>
+  <depend>ros_gz_bridge</depend>
+
+  <!-- RViz -->
+  <depend>rviz2</depend>
+
+  <!-- Optional tools used during development -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
